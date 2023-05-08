@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arya's Perfume">
+    <title>Gallery | Arya's Perfume</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" sizes="32x32">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/Logo.png" alt="Arya's Perfume">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a class="menu__item" href="index.html">Home</a></li>
+                        <li><a class="menu__item active" href="gallery.html">Gallery</a></li>
+                        <li><a class="menu__item" href="about-us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==========================================================================================
+            PAGE HEADER 
+    ========================================================================================== -->
+    <section class="page-header gallery">
+        <div class="container animated-p1 fadeInTop">
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <!-- ==========================================================================================
+            ABOUT SECTION
+    ========================================================================================== -->
+    <section class="section gallery">
+        <div class="container">
+            <h1>Arya's Perfume Collection</h1>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/1.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/2.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/3.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/4.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/5.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/6.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/7.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/8.jpg">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="gallery-img">
+                        <img src="images/gallery/9.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================================================================
+           CONNECT WITH US
+    ========================================================================================== -->
+    <section class="connect">
+        <div class="container">
+            <h1>Let's Get In Touch</h1>
+            <p>Send us Email at:</p>
+            <a class="mail" href="#/"><i class="fas fa-envelope"></i>
+                info@aryasperfume.com</a>
+
+            <ul class="social_icons">
+                <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================================================================
+            FOOTER
+    ========================================================================================== -->
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.png">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="form">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="branding">
+            <p>Copyright &copy; 2023 Arya's Perfume | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

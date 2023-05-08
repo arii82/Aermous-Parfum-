@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arya's Perfume">
+    <title>About Us | Arya's Perfume</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" sizes="32x32">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- This is a code snippet for a navigation bar in HTML -->
+
+<!-- Create a header section -->
+<header>
+    <!-- Create a navigation bar with the "navbar" class -->
+    <nav class="navbar">
+      <!-- Create a logo link with the "logo" class -->
+      <a href="index.html" class="logo">
+        <!-- Insert an image for the logo with the "src" attribute -->
+        <img src="images/logo.png" alt="Arya's Perfume">
+      </a>
+  
+      <!-- Create a navigation menu with the "nav-menu" class -->
+      <div class="nav-menu">
+        <!-- Create an unordered list with the "nav-list" class -->
+        <ul class="nav-list">
+          <!-- Create a list item with a link to the homepage represented by "/" -->
+          <li><a href="/">Home</a></li>
+          <!-- Create a list item with a link to the gallery page -->
+          <li><a href="gallery.html">Gallery</a></li>
+          <!-- Create a list item with a link to the about us page and a class of "active" to style it differently -->
+          <li><a href="about-us.html" class="active">About us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Create an icon with the "fa-solid" and "fa-bars" classes to represent a "hamburger" icon -->
+      <i class="fa-solid fa-bars" id="bar"></i>
+    </nav>
+  </header>
+  
+
+    <!-- ===== Mobile Menu ===== -->
+   <!-- This is a code snippet for a mobile menu in HTML -->
+
+<!-- Create a div with the class "popup-mobilemenu" to represent the mobile menu when it is open -->
+<div class="popup-mobilemenu">
+    <!-- Create another div with the class "menu-inner" to contain the content of the mobile menu -->
+    <div class="menu-inner">
+      <!-- Create a div with the class "menu-top" to contain the close button -->
+      <div class="menu-top">
+        <!-- Create an icon with the classes "fa-solid" and "fa-close" to represent the close button -->
+        <i class="fa-solid fa-close" id="close"></i>
+      </div>
+  
+      <!-- Create a div with the class "content" to contain the mobile menu links -->
+      <div class="content">
+        <!-- Create a navigation element with the ID "sideNavMobile" and the class "mainmenu-nav" -->
+        <nav id="sideNavMobile" class="mainmenu-nav">
+          <!-- Create an unordered list with the class "navbar-list1" -->
+          <ul class="navbar-list1">
+            <!-- Create a list item with a link to the homepage represented by "/" -->
+            <li><a class="menu__item" href="index.html">Home</a></li>
+            <!-- Create a list item with a link to the gallery page -->
+            <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+            <!-- Create a list item with a link to the about us page and a class of "active" to style it differently -->
+            <li><a class="menu__item active" href="about-us.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+    <!-- ==========================================================================================
+            PAGE HEADER 
+    ========================================================================================== -->
+    <!-- This code creates a page header section with a primary heading and a secondary heading that together introduce the Arya's Perfume brand. The "animated-p1 fadeInTop" class may be used to apply animations to the container element for visual effects. -->
+<section class="page-header">
+    <div class="container animated-p1 fadeInTop">
+        <h1>About Us</h1>
+        <h2>Arya's Perfume, where scent meets perfection</h2>
+    </div>
+</section>
+
+
+    <!-- ==========================================================================================
+            ABOUT SECTION
+    ========================================================================================== -->
+    <!-- This code creates a section for the "Who We Are" page with a heading, an image, and a description of Arya's Perfume. The "flex" class is used to create a flexible container that can adjust to different screen sizes. The "pink" class is used to apply a pink color to the brand name. The "btn" class is commented out, but may be used to create a button element linking to another page. -->
+<section class="about section">
+    <div class="container">
+        <h1>Who We Are</h1>
+
+        <div class="flex">
+            <div class="flex-img">
+                <img src="images/hero-bg2.jpg" alt="About Us">
+            </div>
+
+            <div class="flex-content">
+                <span class="pink">Arya's Perfume</span>
+                <h2>"Find your fragrance identity with Arya's Perfume"</h2>
+
+                <p>Arya's Perfume is an online fragrance store that offers a wide range of high-quality perfumes for both men and women. Our collection includes top brands and unique scents at affordable prices, making it easy for our customers to find their perfect scent. Shop with us today and discover your new signature fragrance.</p>
+                <!-- <a href="#/" class="btn">Order Now</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- ==========================================================================================
+            OUR VALUES SECTION
+    ========================================================================================== -->
+    <!-- This code creates a section for the "Our Values" page with a heading and three columns, each containing an image and a title and description of one of Arya's Perfume's core values: Quality, Customer Satisfaction, and Innovation. -->
+
+    <section class="services-section values section">
+        <div class="container">
+            <h1>Our Values</h1>
+
+            <div class="row">
+                <div class="col">
+                    <div class="plan-card">
+                        <img src="images/perfume-bottle.png">
+
+                        <div class="plan-details">
+                            <h2 class="title">Quality</h2>
+                            <p class="text">We are committed to providing our customers with only the highest-quality fragrances.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="plan-card">
+                        <img src="images/satisfaction.png">
+
+                        <div class="plan-details">
+                            <h2 class="title">Customer Satisfaction</h2>
+                            <p class="text">We value our customers and are dedicated to providing exceptional customer service at every stage of the shopping process.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="plan-card">
+                        <img src="images/innov.png">
+
+                        <div class="plan-details">
+                            <h2 class="title">Innovation</h2>
+                            <p class="text">We are always exploring new scents and trends, and strive to offer a diverse and exciting collection of fragrances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================================
+           CONNECT WITH US
+    ========================================================================================== -->
+    <!--
+This section displays the contact information and social media links for the website. 
+It includes an email address for general inquiries and links to the company's social media profiles. 
+-->
+<section class="connect">
+    <div class="container">
+        <h1>Let's Get In Touch</h1>
+        <p>Send us Email at:</p>
+        <a class="mail" href="#/"><i class="fas fa-envelope"></i>
+            info@aryasperfume.com</a>
+
+        <!-- social media icons -->
+        <ul class="social_icons">
+            <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+    <!-- ==========================================================================================
+            FOOTER
+    ========================================================================================== -->
+    <footer>
+        <!-- Main container that holds the two sections of the footer -->
+        <div class="container">
+            <!-- Section for links to other pages and logo -->
+            <div class="links">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.png">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Section for newsletter subscription form -->
+            <div class="contact-details">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="form">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Section for website branding and copyright notice -->
+        <div class="branding">
+            <p>Copyright &copy; 2023 Arya's Perfume | All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
