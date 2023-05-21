@@ -2,64 +2,86 @@
 <html lang="en">
 
 <head>
+    <!-- Set the character encoding to UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Set the compatibility mode for Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the viewport width and initial scale for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the author of the webpage -->
     <meta name="author" content="Arya's Perfume">
+    <!-- Set the title of the webpage -->
     <title>Gallery | Arya's Perfume</title>
+    <!-- Specify the favicon for the webpage -->
     <link rel="icon" type="image/x-icon" href="/images/logo.png" sizes="32x32">
 
-    <!-- CSS File -->
+    <!-- Include the CSS file -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JQuery CDN -->
+    <!-- Include the JQuery library from a CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- FONTAWESOME CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Include the Font Awesome library from a CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
 </head>
 
 <body>
 
+
     <!-- ===== Navigation Bar ===== -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="images/Logo.png" alt="Arya's Perfume">
-            </a>
+<header>
+    <!-- Start of navigation bar -->
+    <nav class="navbar">
+        <!-- Logo with a link to the homepage -->
+        <a href="index.html" class="logo">
+            <img src="images/Logo.png" alt="Arya's Perfume">
+        </a>
 
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="gallery.html" class="active">Gallery</a></li>
-                    <li><a href="about-us.html">About us</a></li>
-                </ul>
-            </div>
+        <!-- Navigation menu -->
+        <div class="nav-menu">
+            <!-- List of navigation items -->
+            <ul class="nav-list">
+                <!-- Home link -->
+                <li><a href="/">Home</a></li>
+                <!-- Gallery link (currently active) -->
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <!-- About Us link -->
+                <li><a href="about-us.html">About us</a></li>
+            </ul>
+        </div>
 
-            <i class="fa-solid fa-bars" id="bar"></i>
-        </nav>
-    </header>
+        <!-- Hamburger icon for mobile navigation -->
+        <i class="fa-solid fa-bars" id="bar"></i>
+    </nav>
+    <!-- End of navigation bar -->
+</header>
 
     <!-- ===== Mobile Menu ===== -->
-    <div class="popup-mobilemenu">
-        <div class="menu-inner">
-            <div class="menu-top">
-                <i class="fa-solid fa-close" id="close"></i>
-            </div>
+<div class="popup-mobilemenu">
+    <div class="menu-inner">
+        <div class="menu-top">
+            <!-- Close icon for the mobile menu -->
+            <i class="fa-solid fa-close" id="close"></i>
+        </div>
 
-            <div class="content">
-                <nav id="sideNavMobile" class="mainmenu-nav">
-                    <ul class="navbar-list1">
-                        <li><a class="menu__item" href="index.html">Home</a></li>
-                        <li><a class="menu__item active" href="gallery.html">Gallery</a></li>
-                        <li><a class="menu__item" href="about-us.html">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="content">
+            <!-- Mobile navigation menu -->
+            <nav id="sideNavMobile" class="mainmenu-nav">
+                <!-- List of navigation items -->
+                <ul class="navbar-list1">
+                    <!-- Home link -->
+                    <li><a class="menu__item" href="index.html">Home</a></li>
+                    <!-- Gallery link (currently active) -->
+                    <li><a class="menu__item active" href="gallery.html">Gallery</a></li>
+                    <!-- About Us link -->
+                    <li><a class="menu__item" href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
+</div>
 
 
 
@@ -67,75 +89,100 @@
             PAGE HEADER 
     ========================================================================================== -->
     <section class="page-header gallery">
+        <!-- Container for the page header content -->
         <div class="container animated-p1 fadeInTop">
+            <!-- Heading for the gallery page -->
             <h1>Gallery</h1>
         </div>
     </section>
+    
 
     <!-- ==========================================================================================
             ABOUT SECTION
     ========================================================================================== -->
     <section class="section gallery">
+        <!-- Container for the gallery section -->
         <div class="container">
+            <!-- Heading for the gallery section -->
             <h1>Arya's Perfume Collection</h1>
-
+    
+            <!-- Row containing the gallery images -->
             <div class="row">
+                <!-- Column 1 -->
                 <div class="col">
+                    <!-- Image 1 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/1.jpg">
+                        <img src="images/gallery/1.jpg" alt="perfumes1">
                     </div>
                 </div>
-
+    
+                <!-- Column 2 -->
                 <div class="col">
+                    <!-- Image 2 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/2.jpg">
+                        <img src="images/gallery/2.jpg" alt="perfumes2">
                     </div>
                 </div>
-
+    
+                <!-- Column 3 -->
                 <div class="col">
+                    <!-- Image 3 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/3.jpg">
+                        <img src="images/gallery/3.jpg" alt="perfumes3">
                     </div>
                 </div>
-
+    
+                <!-- Column 4 -->
                 <div class="col">
+                    <!-- Image 4 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/4.jpg">
+                        <img src="images/gallery/4.jpg" alt="perfumes4">
                     </div>
                 </div>
-
+    
+                <!-- Column 5 -->
                 <div class="col">
+                    <!-- Image 5 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/5.jpg">
+                        <img src="images/gallery/5.jpg" alt="perfumes5">
                     </div>
                 </div>
-
+    
+                <!-- Column 6 -->
                 <div class="col">
+                    <!-- Image 6 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/6.jpg">
+                        <img src="images/gallery/6.jpg" alt="perfumes6">
                     </div>
                 </div>
-
+    
+                <!-- Column 7 -->
                 <div class="col">
+                    <!-- Image 7 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/7.jpg">
+                        <img src="images/gallery/7.jpg" alt="perfumes7">
                     </div>
                 </div>
-
+    
+                <!-- Column 8 -->
                 <div class="col">
+                    <!-- Image 8 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/8.jpg">
+                        <img src="images/gallery/8.jpg" alt="perfumes8">
                     </div>
                 </div>
-
+    
+                <!-- Column 9 -->
                 <div class="col">
+                    <!-- Image 9 -->
                     <div class="gallery-img">
-                        <img src="images/gallery/9.jpg">
+                        <img src="images/gallery/9.jpg" alt="perfumes9">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
 
 
@@ -143,19 +190,28 @@
            CONNECT WITH US
     ========================================================================================== -->
     <section class="connect">
+        <!-- Container for the connect section -->
         <div class="container">
+            <!-- Heading for the connect section -->
             <h1>Let's Get In Touch</h1>
+            <!-- Text description -->
             <p>Send us Email at:</p>
+            <!-- Email link -->
             <a class="mail" href="#/"><i class="fas fa-envelope"></i>
                 info@aryasperfume.com</a>
-
+    
+            <!-- List of social icons -->
             <ul class="social_icons">
+                <!-- Instagram icon -->
                 <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
+                <!-- Twitter icon -->
                 <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
+                <!-- Facebook icon -->
                 <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
         </div>
     </section>
+    
 
 
 
@@ -166,20 +222,20 @@
         <div class="container">
             <div class="links">
                 <a href="index.html" class="logo">
-                    <img src="images/Logo.png">
+                    <img src="images/Logo.png" alt="logo"> <!-- Logo image -->
                 </a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="index.html">Home</a></li> <!-- Home link -->
+                    <li><a href="gallery.html">Gallery</a></li> <!-- Gallery link -->
+                    <li><a href="about-us.html">About Us</a></li> <!-- About Us link -->
                 </ul>
             </div>
-
+    
             <div class="contact-details">
-                <h3>Subscribe to Our Newsletter</h3>
+                <h3>Subscribe to Our Newsletter</h3> <!-- Newsletter subscription heading -->
                 <form class="form">
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                    <button type="submit">Send</button>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email"> <!-- Email input field -->
+                    <button type="submit">Send</button> <!-- Submit button -->
                 </form>
             </div>
         </div>
@@ -187,10 +243,26 @@
             <p>Copyright &copy; 2023 Arya's Perfume | All Rights Reserved.</p>
         </div>
     </footer>
-
-
+    
+    
     <!-- JavaScript File -->
     <script src="js/script.js"></script>
-</body>
-
-</html>
+    </body>
+    
+    </html>
+    
+    <!--
+    The code above represents an HTML footer section of a web page. Here are the comments added to the code:
+    
+    - The <footer> element starts here, representing the footer section of the webpage.
+    - The <div> element with the class "container" contains the content of the footer.
+    - Inside the container, there is a <div> element with the class "links" which contains the logo and navigation links.
+    - The logo is represented by an <a> element with the class "logo" and an <img> element inside it.
+    - The navigation links are represented by an <ul> element with <li> elements for each link.
+    - The <div> element with the class "contact-details" contains the newsletter subscription form.
+    - The form is represented by a <form> element with an input field for email and a submit button.
+    - The <div> element with the class "branding" contains the copyright information.
+    - The JavaScript file "script.js" is linked using the <script> tag.
+    - The </body> and </html> tags mark the end of the HTML document.
+    -->
+    

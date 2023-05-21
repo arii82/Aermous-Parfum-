@@ -115,7 +115,7 @@ $('.slider').each(function() {
     }, 7000);
   }
   
-  // Attach click handlers to the previous and next buttons to move to the previous or next slide.
+  // Attach click handlers to the previous and next buttons to move to the previous or next slide. 
   $('.next_btn').on('click', function() {
     if (currentIndex < ($slides.length - 1)) {
       move(currentIndex + 1);

@@ -220,10 +220,6 @@ p {
   }
 }
 
-/* Define the style for
-
-
-
 .navbar.scroll-on {
   position: fixed;
   top: 0;
@@ -260,12 +256,14 @@ p {
 }
 
 /* ===== Mobile Navbar ===== */
+/* Styles for the 'bar' element */
 #bar {
-  display: none;
+  display: none; /* Hide the element by default */
   color: #fff;
   font-size: 26px;
 }
 
+/* Styles for the mobile menu popup */
 .popup-mobilemenu {
   z-index: 1000000;
   position: fixed;
@@ -283,11 +281,13 @@ p {
   transition: opacity 0.5s ease-out;
 }
 
+/* Styles for the open mobile menu popup */
 .popup-mobilemenu.menu-open {
   visibility: visible;
   opacity: 1;
 }
 
+/* Styles for the inner content of the mobile menu popup */
 .popup-mobilemenu .menu-inner {
   padding: 25px 40px;
   width: 375px;
@@ -303,12 +303,14 @@ p {
   transition: all 0.5s ease-out;
 }
 
+/* Styles for the open inner content of the mobile menu popup */
 .popup-mobilemenu.menu-open .menu-inner {
   opacity: 1;
   right: 0;
   overflow-y: auto;
 }
 
+/* Styles for the top section of the mobile menu */
 .popup-mobilemenu .menu-inner .menu-top {
   border-bottom: 1px solid var(--purple-clr);
   padding: 0 0 10px 0;
@@ -321,6 +323,7 @@ p {
   font-size: 22px;
 }
 
+/* Styles for the content section of the mobile menu */
 .popup-mobilemenu .content {
   display: flex;
   flex-direction: column;
@@ -365,73 +368,83 @@ p {
 
 
 
+
 /* =======================
     LANDING PAGE
   ========================
 */
 
 /* SLIDER */
+/* Styles for the slider container */
 .slider {
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto; /* Center the slider horizontally */
+  width: 100%; /* Take up the full width of its container */
 }
 
+/* Styles for the slide viewer */
 .slide_viewer {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  border-bottom-right-radius: 300px;
+  height: 100vh; /* Set the height of the slide viewer to full viewport height */
+  overflow: hidden; /* Hide any content that exceeds the height of the slide viewer */
+  position: relative; /* Create a stacking context for child elements */
+  border-bottom-right-radius: 300px; /* Apply a border radius to the bottom-right corner */
 }
 
+/* Styles for the slide group */
 .slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
+  height: 100%; /* Take up the full height of the slide viewer */
+  position: relative; /* Create a stacking context for child elements */
+  width: 100%; /* Take up the full width of the slide viewer */
 }
 
+/* Styles for individual slides */
 .slide {
-  display: none;
-  height: 100%;
-  padding-top: 135px;
-  position: absolute;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  display: none; /* Hide the slides by default */
+  height: 100%; /* Take up the full height of the slide viewer */
+  padding-top: 135px; /* Add top padding to adjust the slide content vertically */
+  position: absolute; /* Position the slides relative to the slide viewer */
+  width: 100%; /* Take up the full width of the slide viewer */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Scale the background image to cover the entire slide */
+  background-position: center center; /* Position the background image in the center */
+  background-attachment: fixed; /* Fix the background image position relative to the viewport */
 }
 
+/* Display the first slide */
 .slide:first-child {
-  display: block;
+  display: block; /* Show the first slide */
 }
 
+/* Styles for the first slide */
 .slide:nth-of-type(1) {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.7) 100%
     ),
-    url("../images/hero-bg3.jpg");
+    url("../images/hero-bg3.jpg"); /* Set the background image for the first slide */
 }
 
+/* Styles for the second slide */
 .slide:nth-of-type(2) {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../images/hero-bg1.jpg");
+    url("../images/hero-bg1.jpg"); /* Set the background image for the second slide */
 }
 
+/* Styles for the third slide */
 .slide:nth-of-type(3) {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../images/hero-bg2.jpg");
+    url("../images/hero-bg2.jpg"); /* Set the background image for the third slide */
 }
 
+/* CSS code for slide buttons */
 .slide_buttons {
   left: 0;
   position: absolute;
@@ -439,23 +452,26 @@ p {
   text-align: center;
 }
 
+/* CSS code for individual slide button */
 a.slide_btn {
   color: #474544;
   font-size: 42px;
   margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out; /* Transition for webkit browsers */
+  -moz-transition: all 0.4s ease-in-out; /* Transition for Mozilla Firefox */
+  -ms-transition: all 0.4s ease-in-out; /* Transition for Microsoft Edge */
+  -o-transition: all 0.4s ease-in-out; /* Transition for Opera */
+  transition: all 0.4s ease-in-out; /* Generic transition */
 }
 
+/* CSS code for active and hovered slide button */
 .slide_btn.active,
 .slide_btn:hover {
   color: #ccc;
   cursor: pointer;
 }
 
+/* CSS code for directional navigation */
 .directional_nav {
   height: 50px;
   width: 100%;
@@ -465,10 +481,12 @@ a.slide_btn {
   top: 50%;
 }
 
+/* CSS code for directional navigation SVG icons */
 .directional_nav svg {
   width: 40px;
 }
 
+/* CSS code for previous button */
 .previous_btn {
   bottom: 0;
   left: 20px;
@@ -477,42 +495,47 @@ a.slide_btn {
   top: 0;
 }
 
+/* CSS code for next button */
 .next_btn {
   bottom: 0;
   margin: auto;
   position: absolute;
-  /* left: 1250px; */
+  /* left: 1250px; */ /* Commented out as it may not be necessary */
   right: 20px;
   top: 0;
 }
 
+/* Styling for previous and next buttons */
 .previous_btn,
 .next_btn {
   cursor: pointer;
   height: 65px;
   opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out; /* Transition for webkit browsers */
+  -moz-transition: opacity 0.4s ease-in-out; /* Transition for Mozilla Firefox */
+  -ms-transition: opacity 0.4s ease-in-out; /* Transition for Microsoft Edge */
+  -o-transition: opacity 0.4s ease-in-out; /* Transition for Opera */
+  transition: opacity 0.4s ease-in-out; /* Transition for other browsers */
   width: 65px;
 }
 
+/* Styling when hovering over previous and next buttons */
 .previous_btn:hover,
 .next_btn:hover {
   opacity: 1;
 }
 
+/* Styling for screens with maximum width of 767 pixels */
 @media only screen and (max-width: 767px) {
   .previous_btn {
-    left: 0;
+    left: 0; /* Position previous button to the left */
   }
   .next_btn {
-    right: 0;
+    right: 0; /* Position next button to the right */
   }
 }
 
+/* Styling for a center container */
 .center {
   height: 100%;
   margin: -1px auto;
@@ -525,6 +548,7 @@ a.slide_btn {
   justify-content: center;
 }
 
+/* Styling for content container */
 .content {
   position: relative;
   max-width: 100%;
@@ -537,6 +561,7 @@ a.slide_btn {
   gap: 0;
 }
 
+/* Styling for hero text */
 .hero-text {
   width: 850px;
   max-width: 100%;
@@ -560,6 +585,7 @@ a.slide_btn {
   line-height: 1.3;
 }
 
+/* Styling for general button */
 .btn {
   padding: 12px 25px;
   background: var(--pink-clr);
@@ -578,12 +604,13 @@ a.slide_btn {
   color: var(--pink-clr);
 }
 
-/* --- Services Section --- */
+/* Styling for services section */
 .services .row {
   align-items: center;
   justify-content: center;
 }
 
+/* Styling for each column in the services section */
 .services .col {
   display: flex;
   flex-direction: column;
@@ -593,6 +620,7 @@ a.slide_btn {
   padding: 20px;
 }
 
+/* Styling for images within the services section */
 .services .col img {
   background: #ffcece;
   padding: 15px;
@@ -602,524 +630,590 @@ a.slide_btn {
 
 
 /* ===== ABOUT PAGE ===== */
+/* Styling for the page header section */
 .page-header {
   height: 100vh;
-  /* padding-top: 115px; */
-  background: url("../images/about-hero.jpg");
-  background-color: rgb(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-attachment: fixed;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  background-color: rgb(0, 0, 0, 0.6);
-  text-align: center;
-  border-bottom-right-radius: 300px;
+  /* padding-top: 115px; */ /* Commented out padding-top property */
+  background: url("../images/about-hero.jpg"); /* Background image */
+  background-color: rgb(0, 0, 0, 0.5); /* Background color with transparency */
+  background-blend-mode: multiply; /* Blend mode for the background */
+  background-size: cover; /* Background image sizing */
+  background-repeat: no-repeat; /* Background image repetition */
+  background-position: bottom center; /* Background image position */
+  background-attachment: fixed; /* Background attachment behavior */
+  display: flex; /* Display as flex container */
+  -webkit-box-pack: center; /* Flexbox alignment for webkit browsers */
+  justify-content: center; /* Flexbox alignment */
+  -webkit-box-align: center; /* Flexbox alignment for webkit browsers */
+  align-items: center; /* Flexbox alignment */
+  text-align: center; /* Center-align text content */
+  position: relative; /* Positioning context */
+  background-color: rgb(0, 0, 0, 0.6); /* Background color with transparency */
+  text-align: center; /* Center-align text content */
+  border-bottom-right-radius: 300px; /* Border radius for the bottom right corner */
 }
 
+/* Styling for the h1 heading within the page header */
 .page-header h1 {
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  position: relative;
-  z-index: 2;
+  color: #fff; /* Text color */
+  text-align: center; /* Center-align text content */
+  font-weight: 700; /* Font weight */
+  position: relative; /* Positioning context */
+  z-index: 2; /* Stacking order */
 }
 
+/* Styling for the h2 heading within the page header */
 .page-header h2 {
-  color: #ccc;
-  font-weight: 400;
-  font-size: 26px;
+  color: #ccc; /* Text color */
+  font-weight: 400; /* Font weight */
+  font-size: 26px; /* Font size */
 }
 
+/* Styling for the h2 heading within the page header when it's within an anchor tag */
 .page-header h2 a {
-  color: var(--lightGreen-color);
-  font-size: 28px;
-  font-weight: 500;
-  transition: 0.4s;
-}
+  color: var(--lightGreen-color); /* Text color */
+  font-size: 28px; /* Font size */
+  font-weight: 500; /* Font weight */
+  transition: 0.4s; /* Transition effect */
+} 
 
+/* Styling for flex container */
 .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+  display: flex; /* Display as flex container */
+  align-items: center; /* Flexbox alignment */
+  justify-content: space-evenly; /* Flexbox alignment with equal space between items */
+  gap: 30px; /* Spacing between flex items */
 }
 
+/* Styling for flex container with images */
 .flex-img {
-  width: 50%;
-  overflow: hidden;
+  width: 50%; /* Width of the flex container */
+  overflow: hidden; /* Hide overflowing content */
 }
 
+/* Styling for images within the flex container */
 .flex-img img {
-  width: 100%;
-  transition: 0.5s all;
+  width: 100%; /* Width of the image */
+  transition: 0.5s all; /* Transition effect */
 }
 
+/* Styling for images within the flex container when hovering */
 .flex-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Scale the image on hover */
 }
 
+/* Styling for content within the flex container */
 .flex-content {
-  width: 50%;
+  width: 50%; /* Width of the content */
 }
 
+/* Styling for paragraphs within the flex container */
 .flex-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  font-size: 18px; /* Font size */
+  margin-bottom: 20px; /* Margin at the bottom */
+  line-height: 1.5; /* Line height */
 }
 
-
+/* Styling for spans within the flex container in the home-about section */
 .home-about .flex-content span {
-  color: var(--pink-clr);
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 10px;
+  color: var(--pink-clr); /* Text color */
+  font-size: 18px; /* Font size */
+  font-weight: 700; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  display: block; /* Display as block element */
+  margin-bottom: 10px; /* Margin at the bottom */
 }
 
+/* Styling for h2 heading within the home-about section */
 .home-about h2 {
-  color: #202020;
-  font-size: 46px;
-  margin-bottom: 20px;
+  color: #202020; /* Text color */
+  font-size: 46px; /* Font size */
+  margin-bottom: 20px; /* Margin at the bottom */
 }
 
+/* Styling for paragraphs within the home-about section */
 .home-about p {
-  font-size: 18px;
-  line-height: 1.4;
-  max-width: 100%;
-  width: 978px;
-  margin: auto;
+  font-size: 18px; /* Font size */
+  line-height: 1.4; /* Line height */
+  max-width: 100%; /* Maximum width */
+  width: 978px; /* Specific width */
+  margin: auto; /* Center-align horizontally */
 }
 
+/* Styling for about section */
 .about {
-  padding: 30px;
-  padding-bottom: 80px;
+  padding: 30px; /* Padding */
+  padding-bottom: 80px; /* Bottom padding */
 }
+
+/* Styling for h1 headings within sections excluding the home section */
 .section:not(#home) h1 {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 30px;
+  text-align: center; /* Center-align text content */
+  font-weight: 600; /* Font weight */
+  margin-bottom: 30px; /* Margin at the bottom */
 }
 
+/* Styling for flex container */
 .flex {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  justify-content: space-evenly;
+  display: flex; /* Display as flex container */
+  align-items: center; /* Flexbox alignment */
+  gap: 30px; /* Spacing between flex items */
+  justify-content: space-evenly; /* Flexbox alignment with equal space between items */
 }
 
+/* Styling for flex container with images */
 .flex-img {
-    overflow: hidden;
-    border-radius: 6px;
-    width: 50%;
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 6px; /* Border radius */
+    width: 50%; /* Width of the flex container */
 }
 
+/* Styling for images within the flex container */
 .flex img {
-  width: 100%;
-  border-radius: 6px;
-  transition: 0.5s;
+  width: 100%; /* Width of the image */
+  border-radius: 6px; /* Border radius */
+  transition: 0.5s; /* Transition effect */
 }
 
+/* Styling for images within the flex container when hovering */
 .flex img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale the image on hover */
 }
 
+/* Styling for content within the flex container */
 .flex-content {
-  width: 50%;
+  width: 50%; /* Width of the content */
 }
 
+/* Styling for h2 heading within the content in the flex container */
 .flex-content h2 {
-  font-size: 32px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  font-weight: 500;
+  font-size: 32px; /* Font size */
+  line-height: 1.2; /* Line height */
+  margin-bottom: 20px; /* Margin at the bottom */
+  font-weight: 500; /* Font weight */
 }
 
+/* Styling for paragraphs within the flex content */
 .flex-content p {
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 20px;
+  font-size: 18px; /* Font size */
+  text-align: justify; /* Justify text alignment */
+  margin-bottom: 20px; /* Margin at the bottom */
 }
 
+/* Styling for buttons within the about section */
 .about .btn {
-  margin-top: 0;
+margin-top: 0; /* Remove top margin */
 }
+
+/* Styling for buttons within the about section when hovering */
 .about .btn:hover {
-  color: var(--lightBlue-color);
+color: var(--lightBlue-color); /* Text color on hover */
 }
 
+/* Styling for flex container rows */
 .row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
-  flex-wrap: wrap;
-  row-gap: 30px;
+display: flex; /* Display as flex container */
+justify-content: space-evenly; /* Flexbox alignment with equal space between items */
+align-items: stretch; /* Flexbox alignment */
+flex-wrap: wrap; /* Wrap flex items to new lines */
+row-gap: 30px; /* Spacing between rows */
 }
 
+/* Styling for flex container columns */
 .col {
-  width: 30%;
+width: 30%; /* Width of the column */
 }
 
+/* Styling for services section */
 .services-section {
-  background: #f2eaea;
+background: #f2eaea; /* Background color */
 }
 
+/* Styling for plan cards */
 .plan-card {
-  padding: 0;
-  height: 100% ;
-  background: #fff;
-  border-radius: 10px;
-  border: 1px solid #e1e1e1;
-  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15);
-  box-shadow: 0 0 17px 0 rgb(0 0 0 / 15%);
-  transition: 0.5s;
+padding: 0; /* Remove padding */
+height: 100%; /* Height of the plan card */
+background: #fff; /* Background color */
+border-radius: 10px; /* Border radius */
+border: 1px solid #e1e1e1; /* Border */
+box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15); /* Box shadow */
+box-shadow: 0 0 17px 0 rgb(0 0 0 / 15%); /* Box shadow */
+transition: 0.5s; /* Transition effect */
 }
 
+/* Styling for plan cards when hovering */
 .plan-card:hover {
-  transform: translateY(-10px);
+transform: translateY(-10px); /* Move card up on hover */
 }
 
+/* Styling for images within plan cards */
 .plan-card img {
-  width: 100%;
-  height: 240px;
-  border-radius: inherit;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 15px;
+width: 100%; /* Width of the image */
+height: 240px; /* Height of the image */
+border-radius: inherit; /* Inherit border radius */
+border-bottom-left-radius: 0; /* Border radius for bottom left corner */
+border-bottom-right-radius: 0; /* Border radius for bottom right corner */
+margin-bottom: 15px; /* Margin at the bottom */
 }
-
+/* Styling for plan details within plan cards */
 .plan-details {
-  padding: 10px 20px 20px 20px;
-  text-align: left;
+padding: 10px 20px 20px 20px; /* Padding */
+text-align: left; /* Left-align text content */
 }
 
+/* Styling for h2 headings within plan details */
 .plan-details h2{
-  display: inline-block;
-  font-weight: 600;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid var(--purple-clr);
+  display: inline-block; /* Display as inline-block */
+  font-weight: 600; /* Font weight */
+  padding-bottom: 10px; /* Padding at the bottom */
+  margin-bottom: 10px; /* Margin at the bottom */
+  border-bottom: 1px solid var(--purple-clr); /* Bottom border */
 }
 
+/* Styling for paragraphs within plan details */
 .plan-details p {
-  font-size: 18px;
-  line-height: 1.3;
-  color: #333;
+  font-size: 18px; /* Font size */
+  line-height: 1.3; /* Line height */
+  color: #333; /* Text color */
 }
 
+/* Styling for images within plan cards in the values section */
 .values .plan-card img {
-  width: unset;
-  height: unset;
-  margin: auto;
-  display: flex;
-  padding: 30px 0;
+  width: unset; /* Remove width restriction */
+  height: unset; /* Remove height restriction */
+  margin: auto; /* Center-align horizontally */
+  display: flex; /* Display as flex container */
+  padding: 30px 0; /* Padding */
 }
 
+/* Styling for plan cards in the values section */
 .values .plan-card {
-  background: #ff8484;
+  background: #ff8484; /* Background color */
 }
 
+/* Styling for paragraphs and h2 headings within plan cards in the values section */
 .values .plan-card p,
 .values .plan-card h2 {
-  color: #fff;
+  color: #fff; /* Text color */
 }
 
-
-/* ===== Connect Section ===== */
+/* Styling for connect section */
 .connect {
-  margin-bottom: 50px;
+  margin-bottom: 50px; /* Margin at the bottom */
 }
+
+/* Styling for container within the connect section */
 .connect .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Display as flex container */
+  flex-direction: column; /* Flexbox direction */
+  align-items: center; /* Flexbox alignment */
+  justify-content: center; /* Flexbox alignment */
 }
 
+/* Styling for paragraphs within the connect section */
 .connect p {
-  font-size: 22px;
-  padding-bottom: 10px;
+  font-size: 22px; /* Font size */
+  padding-bottom: 10px; /* Padding at the bottom */
 }
 
+/* Styling for mail within the connect section */
 .connect .mail {
-  font-size: 20px;
-  margin-bottom: 30px;
-  transition: 0.4s all;
+  font-size: 20px; /* Font size */
+  margin-bottom: 30px; /* Margin at the bottom */
+  transition: 0.4s all; /* Transition effect */
 }
 
+/* Styling for icons within the connect section */
 .connect i {
-  color: var(--pink-clr);
+  color: var(--pink-clr); /* Icon color */
 }
 
+/* Styling for mail within the connect section when hovering */
 .connect .mail:hover {
-  color: #ffcc24;
+  color: #ffcc24; /* Text color on hover */
 }
 
+/* Styling for social icons */
 .social_icons {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-top: 30px;
+  display: flex; /* Display as flex container */
+  gap: 20px; /* Spacing between icons */
+  align-items: center; /* Flexbox alignment */
+  margin-top: 30px; /* Margin at the top */
 }
 
+/* Styling for social icons' anchor elements */
 .social_icons li a{
-  font-size: 32px;
-  color: #fff;
-  background: var(--pink-clr);
-  transition: 0.4s all;
-  display: block;
-  padding: 5px 15px;
-  border-radius: 50%;
+  font-size: 32px; /* Font size */
+  color: #fff; /* Icon color */
+  background: var(--pink-clr); /* Background color */
+  transition: 0.4s all; /* Transition effect */
+  display: block; /* Display as block element */
+  padding: 5px 15px; /* Padding */
+  border-radius: 50%; /* Border radius */
 }
 
+/* Styling for icons within social icons' anchor elements */
 .social_icons li a i {
-  color: #fff;
-  transition: 0.4s all;
+  color: #fff; /* Icon color */
+  transition: 0.4s all; /* Transition effect */
 }
 
+/* Styling for social icons' anchor elements when hovering */
 .social_icons li a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Move icon up on hover */
 }
 
 /* ======================================
    GALLERY
    ====================================== */
+/* Styling for page header with the "gallery" class */
 .page-header.gallery {
-  background-image: url("../images/gallery-hero.jpg");
-  background-position: center center;
+  background-image: url("../images/gallery-hero.jpg"); /* Background image */
+  background-position: center center; /* Background image position */
 }
 
+/* Styling for gallery images */
 .gallery-img {
-  border-radius: 5px;
-  overflow: hidden;
+  border-radius: 5px; /* Border radius */
+  overflow: hidden; /* Hide overflowing content */
 }
 
+/* Styling for images within gallery */
 .gallery-img img {
-  width: 100%;
-  height: 260px;
-  border-radius: inherit;
-  transition: 0.4s all;
+  width: 100%; /* Image width */
+  height: 260px; /* Image height */
+  border-radius: inherit; /* Inherit border radius from parent */
+  transition: 0.4s all; /* Transition effect */
 }
 
+/* Styling for images within gallery when hovering */
 .gallery-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Scale up image on hover */
 }
+
 
 
 
 
 /* ===== Footer ===== */
+/* Styling for the footer section */
 footer {
-  position: relative;
-  height: auto;
-  padding: 20px 0 0 0;
-  background: var(--purple-clr);
-  text-align: center;
-  color: #fff;
-  border-top-left-radius: 300px;
+  position: relative; /* Positioning */
+  height: auto; /* Height */
+  padding: 20px 0 0 0; /* Padding */
+  background: var(--purple-clr); /* Background color */
+  text-align: center; /* Text alignment */
+  color: #fff; /* Text color */
+  border-top-left-radius: 300px; /* Border radius */
 }
 
+/* Styling for the container within the footer */
 footer .container {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-left: 0; /* Margin left */
+  margin-right: 0; /* Margin right */
+  padding-left: 30px; /* Padding left */
+  padding-right: 30px; /* Padding right */
+  width: 100%; /* Width */
+  display: flex; /* Display as flex container */
+  flex-wrap: wrap; /* Flex container wrap */
+  justify-content: space-evenly; /* Flex container justification */
 }
 
+/* Styling for the logo within the footer */
 footer .logo {
-  margin: 0 auto;
-  width: 40%;
-  display: block;
+  margin: 0 auto; /* Margin */
+  width: 40%; /* Width */
+  display: block; /* Display as block element */
 }
 
+/* Styling for links within the footer */
 footer .links {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margin bottom */
 }
 
+/* Styling for the unordered list within the links */
 footer .links ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Display as flex container */
+  align-items: center; /* Flex container alignment */
+  justify-content: center; /* Flex container justification */
 }
 
+/* Styling for list items within the unordered list */
 footer .links ul li {
-  padding: 20px 15px;
+  padding: 20px 15px; /* Padding */
 }
 
+/* Styling for anchor elements within list items */
 footer .links ul li a {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: var(--quicksand);
-  transition: all 0.4s ease-in-out;
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+  font-weight: 600; /* Font weight */
+  font-family: var(--quicksand); /* Font family */
+  transition: all 0.4s ease-in-out; /* Transition effect */
 }
 
+/* Styling for anchor elements within list items on hover */
 footer .links ul li a:hover {
-  color: var(--pink-clr);
+  color: var(--pink-clr); /* Text color on hover */
 }
 
+/* Styling for the h3 heading within the contact-details */
 footer .contact-details h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--pink-clr);
-  margin-bottom: 20px;
+  color: #fff; /* Text color */
+  font-size: 32px; /* Font size */
+  font-weight: 400; /* Font weight */
+  padding-bottom: 10px; /* Padding bottom */
+  border-bottom: 2px solid var(--pink-clr); /* Border bottom */
+  margin-bottom: 20px; /* Margin bottom */
 }
 
+/* Styling for the form */
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Display as flex container */
+  align-items: center; /* Flex container alignment */
+  justify-content: center; /* Flex container justification */
 }
 
+/* Styling for input elements within the form */
 .form input {
-  height: 45px;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 15px;
-  border-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  font-family: var(--montserrat);
-  font-size: 16px;
+  height: 45px; /* Height */
+  width: 100%; /* Width */
+  border: none; /* Border */
+  outline: none; /* Outline */
+  padding: 15px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  border-top-right-radius: 0; /* Top right border radius */
+  border-bottom-right-radius: 0; /* Bottom right border radius */
+  font-family: var(--montserrat); /* Font family */
+  font-size: 16px; /* Font size */
 }
 
+/* Styling for the button within the form */
 .form button {
-  height: 45px;
-  background: var(--pink-clr);
-  outline: none;
-  border: none;
-  padding: 15px;
-  border-radius: 5px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  cursor: pointer;
-  color: #fff;
-  font-size: 16px;
-  font-family: var(--montserrat);
-  display: flex;
-  align-items: center;
+  height: 45px; /* Height */
+  background: var(--pink-clr); /* Background color */
+  outline: none; /* Outline */
+  border: none; /* Border */
+  padding: 15px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  border-top-left-radius: 0; /* Top left border radius */
+  border-bottom-left-radius: 0; /* Bottom left border radius */
+  cursor: pointer; /* Cursor style */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  font-family: var(--montserrat); /* Font family */
+  display: flex; /* Display as flex container */
+  align-items: center; /* Flex container alignment */
 }
 
+/* Styling for the branding section in the footer */
 footer .branding {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #fff;
+  padding-top: 20px; /* Padding top */
+  padding-bottom: 20px; /* Padding bottom */
+  border-top: 1px solid #fff; /* Top border */
 }
 
+/* Styling for paragraph elements within the branding section */
 .branding p {
-  color: #fff;
+  color: #fff; /* Text color */
 }
+
 
 
 
 
 
 /* ===== RESPONSIVE DESIGN ===== */
-
-/* FOR TABS */
+/* Media query for tablets */
 @media (max-width: 991px) {
   .logo {
-    width: 15%;
+    width: 15%; /* Adjusting the width of the logo */
   }
 
   .navbar .nav-menu {
-    display: none;
+    display: none; /* Hiding the navigation menu */
   }
   
   #bar {
-    display: block;
+    display: block; /* Displaying the navigation bar */
   }
 
   .navbar.scroll-on .logo {
-    width: 12%;
+    width: 12%; /* Adjusting the width of the logo when scrolling */
   }
 
   .center {
-    margin-left: 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: 0; /* Resetting the margin left */
+    padding-left: 3rem; /* Adjusting the padding left */
+    padding-right: 3rem; /* Adjusting the padding right */
   }
 
-  /* About */
+  /* Styling adjustments for the "About" section */
   .flex {
-    flex-direction: column;
+    flex-direction: column; /* Changing the flex direction */
   }
 
   .flex-content,
   .flex-img {
-    width: 100%;
+    width: 100%; /* Setting the width to 100% */
   }
 }
 
-/* FOR MOBILE */
+/* Media query for mobile devices */
 @media (max-width: 540px) {
 
   .navbar {
-    padding-left: 0;
+    padding-left: 0; /* Resetting the padding left */
   }
   .logo {
-    width: 25%;
+    width: 25%; /* Adjusting the width of the logo */
   }
   .navbar.scroll-on .logo,
   footer .logo {
-    width: 30%;
+    width: 30%; /* Adjusting the width of the logo when scrolling or in the footer */
   }
 
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px; /* Adjusting the padding left */
+    padding-right: 15px; /* Adjusting the padding right */
   }
 
   .slide {
-    padding-top: 80px;
+    padding-top: 80px; /* Adjusting the padding top */
   }
 
   .center {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: 0;
+    padding-left: 1rem; /* Adjusting the padding left */
+    padding-right: 1rem; /* Adjusting the padding right */
+    margin-left: 0; /* Resetting the margin left */
   }
 
   .hero-text h1 {
-    font-size: 50px;
+    font-size: 50px; /* Adjusting the font size */
   }
 
   .col {
-    width: 80%;
+    width: 80%; /* Adjusting the width of the columns */
   }
 }
 
+/* Media query for smaller mobile devices */
 @media (max-width: 425px) {
   .logo {
-    width: 40%;
+    width: 40%; /* Adjusting the width of the logo */
   }
 
   .navbar.scroll-on .logo,
   footer .logo {
-    width: 30%;
+    width: 30%; /* Adjusting the width of the logo when scrolling or in the footer */
   }
 
   .home-about h2 {
-    font-size: 38px;
+    font-size: 38px; /* Adjusting the font size */
   }
 
   .popup-mobilemenu .menu-inner {
-    width: 270px;
+    width: 270px; /* Adjusting the width of the mobile menu */
   }
 }
+

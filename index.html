@@ -2,64 +2,100 @@
 <html lang="en">
 
 <head>
+    <!-- Set the character encoding -->
     <meta charset="UTF-8">
+    
+    <!-- Specify the browser compatibility -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Set the viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Define the author of the webpage -->
     <meta name="author" content="Arya's Perfume">
+    
+    <!-- Set the title of the webpage -->
     <title>Arya's Perfume</title>
-<link rel="icon" type="image/x-icon" href="/images/logo.png" sizes="32x32">
-    <!-- CSS File -->
+    
+    <!-- Set the favicon of the webpage -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" sizes="32x32">
+    
+    <!-- Include the CSS file -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JQuery CDN -->
+    <!-- Include the JQuery library from a CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- FONTAWESOME CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Include the FONTAWESOME library from a CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
 </head>
 
 <body>
 
+
     <!-- ===== Navigation Bar ===== -->
     <header>
+        <!-- Navigation section -->
         <nav class="navbar">
+            
+            <!-- Logo link -->
             <a href="index.html" class="logo">
+                <!-- Logo image -->
                 <img src="images/logo.png" alt="Arya's Perfume">
             </a>
-
+    
+            <!-- Navigation menu -->
             <div class="nav-menu">
+                
+                <!-- List of navigation items -->
                 <ul class="nav-list">
+                    <!-- Home link -->
                     <li><a href="/" class="active">Home</a></li>
+                    <!-- Gallery link -->
                     <li><a href="gallery.html">Gallery</a></li>
+                    <!-- About Us link -->
                     <li><a href="about-us.html">About us</a></li>
                 </ul>
             </div>
-
+    
+            <!-- Toggle button for mobile menu -->
             <i class="fa-solid fa-bars" id="bar"></i>
         </nav>
     </header>
-
+    
     <!-- ===== Mobile Menu ===== -->
     <div class="popup-mobilemenu">
+        <!-- Popup mobile menu inner container -->
         <div class="menu-inner">
+            
+            <!-- Menu top section -->
             <div class="menu-top">
+                <!-- Close button icon -->
                 <i class="fa-solid fa-close" id="close"></i>
             </div>
-
+    
+            <!-- Content section -->
             <div class="content">
+                
+                <!-- Mobile navigation menu -->
                 <nav id="sideNavMobile" class="mainmenu-nav">
+                    
+                    <!-- List of navigation items -->
                     <ul class="navbar-list1">
+                        <!-- Home link -->
                         <li><a class="menu__item active" href="index.html">Home</a></li>
+                        <!-- Gallery link -->
                         <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+                        <!-- About Us link -->
                         <li><a class="menu__item" href="about-us.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
-
+    
 
     <!-- ==========================================================================================
             HERO SECTION
@@ -135,108 +171,154 @@
     <!-- ==========================================================================================
             SERVICES SECTION
     ========================================================================================== -->
-    <section class="section services">
-        <div class="container">
-            <h1>What We Provide</h1>
+    <!-- The section containing services provided -->
+<section class="section services">
+    <div class="container">
+        <!-- Heading for the section -->
+        <h2>What We Provide</h2>
 
-            <div class="row">
-                <div class="col">
-                    <img src="images/perfume.png" alt="Quality">
-                    <p>Quality</p>
-                </div>
+        <!-- Row to hold the service items -->
+        <div class="row">
+            <!-- First service item -->
+            <div class="col">
+                <!-- Image representing quality -->
+                <img src="images/perfume.png" alt="Quality">
+                <!-- Text describing the quality service -->
+                <p>Quality</p>
+            </div>
 
-                <div class="col">
-                    <img src="images/fast-delivery.png" alt="Fast Delivery">
-                    <p>Fast Delivery</p>
-                </div>
+            <!-- Second service item -->
+            <div class="col">
+                <!-- Image representing fast delivery -->
+                <img src="images/fast-delivery.png" alt="Fast Delivery">
+                <!-- Text describing the fast delivery service -->
+                <p>Fast Delivery</p>
+            </div>
 
-                <div class="col">
-                    <img src="images/return-box.png" alt="Return Policy">
-                    <p>Return Policy</p>
-                </div>
+            <!-- Third service item -->
+            <div class="col">
+                <!-- Image representing the return policy -->
+                <img src="images/return-box.png" alt="Return Policy">
+                <!-- Text describing the return policy service -->
+                <p>Return Policy</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- ==========================================================================================
             ABOUT SECTION
     ========================================================================================== -->
-    <section class="section home-about">
-        <div class="container">
+    <!-- The section representing the "About Us" section on the homepage -->
+<section class="section home-about">
+    <div class="container">
+        <!-- Container for the content -->
 
-            <div class="flex">
-                <div class="flex-img">
-                    <img src="images/about.jpg" alt="About Us">
-                </div>
-                <div class="flex-content">
-                    <span>Arya's Perfume</span>
-                    <h2>Who We Are</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deserunt? Odio asperiores
-                        similique minima commodi vero eaque, quidem soluta eum dicta porro nesciunt quaerat alias
-                        nostrum reprehenderit provident ipsum sit numquam minus qui fugiat facilis! Rem facere
-                        temporibus, id ratione iste illo explicabo porro sapiente quos illum pariatur perspiciatis
-                        aliquam nihil nesciunt ab, eos alias aliquid recusandae doloribus voluptatibus culpa.</p>
-                    <a href="about-us.html" class="btn">Learn More</a>
-                </div>
-                
+        <!-- Flex container to hold the image and content side by side -->
+        <div class="flex">
+            <!-- Container for the "About Us" image -->
+            <div class="flex-img">
+                <!-- Image representing the company -->
+                <img src="images/about.jpg" alt="About Us">
+            </div>
+
+            <!-- Container for the "About Us" content -->
+            <div class="flex-content">
+                <!-- Brand name or title -->
+                <span>Arya's Perfume</span>
+                <!-- Heading for the "Who We Are" section -->
+                <h2>Who We Are</h2>
+                <!-- Description or text about the company -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deserunt? Odio asperiores
+                    similique minima commodi vero eaque, quidem soluta eum dicta porro nesciunt quaerat alias
+                    nostrum reprehenderit provident ipsum sit numquam minus qui fugiat facilis! Rem facere
+                    temporibus, id ratione iste illo explicabo porro sapiente quos illum pariatur perspiciatis
+                    aliquam nihil nesciunt ab, eos alias aliquid recusandae doloribus voluptatibus culpa.</p>
+                <!-- Link to learn more about the company -->
+                <a href="about-us.html" class="btn">Learn More</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- ==========================================================================================
            CONNECT WITH US
     ========================================================================================== -->
-    <section class="connect">
-        <div class="container">
-            <h1>Let's Get In Touch</h1>
-            <p>Send us Email at:</p>
-            <a class="mail" href="#/"><i class="fas fa-envelope"></i>
-                info@aryasperfume.com</a>
+    <!-- The section representing the "Connect" section -->
+<section class="connect">
+    <div class="container">
+        <!-- Container for the content -->
 
-            <ul class="social_icons">
-                <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
-        </div>
-    </section>
+        <!-- Heading for the section -->
+        <h2>Let's Get In Touch</h2>
+        <!-- Text indicating to send an email -->
+        <p>Send us Email at:</p>
+        <!-- Link with email address -->
+        <a class="mail" href="#/"><i class="fas fa-envelope"></i> info@aryasperfume.com</a>
+
+        <!-- List of social media icons -->
+        <ul class="social_icons">
+            <!-- Instagram icon -->
+            <li><a href="#/"><i class="fa-brands fa-instagram"></i></a></li>
+            <!-- Twitter icon -->
+            <li><a href="#/"><i class="fa-brands fa-twitter"></i></a></li>
+            <!-- Facebook icon -->
+            <li><a href="#/"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </div>
+</section>
 
 
 
     <!-- ==========================================================================================
             FOOTER
     ========================================================================================== -->
-    <footer>
-        <div class="container">
-            <div class="links">
-                <a href="index.html" class="logo">
-                    <img src="images/Logo.png">
-                </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </div>
+    <!-- The footer section -->
+<footer>
+    <div class="container">
+        <!-- Container for the footer content -->
 
-            <div class="contact-details">
-                <h3>Subscribe to Our Newsletter</h3>
-                <form class="form">
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+        <!-- Links section -->
+        <div class="links">
+            <!-- Logo linking to the homepage -->
+            <a href="index.html" class="logo">
+                <img src="images/Logo.png" alt="logo">
+            </a>
+            <!-- List of links -->
+            <ul>
+                <!-- Home link -->
+                <li><a href="index.html">Home</a></li>
+                <!-- Gallery link -->
+                <li><a href="gallery.html">Gallery</a></li>
+                <!-- About Us link -->
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
         </div>
-        <div class="branding">
-            <p>Copyright &copy; 2023 Arya's Perfume | All Rights Reserved.</p>
+
+        <!-- Contact details section -->
+        <div class="contact-details">
+            <!-- Heading for the newsletter subscription -->
+            <h3>Subscribe to Our Newsletter</h3>
+            <!-- Form for the newsletter subscription -->
+            <form class="form">
+                <!-- Email input field -->
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <!-- Submit button -->
+                <button type="submit">Send</button>
+            </form>
         </div>
-    </footer>
+    </div>
 
+    <!-- Branding section -->
+    <div class="branding">
+        <!-- Copyright information -->
+        <p>Copyright &copy; 2023 Arya's Perfume | All Rights Reserved.</p>
+    </div>
+</footer>
 
-    <!-- JavaScript File -->
-    <script src="js/script.js"></script>
+<!-- JavaScript File -->
+<script src="js/script.js"></script>
 </body>
-
 </html>
